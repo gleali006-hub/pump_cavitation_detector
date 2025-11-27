@@ -1,11 +1,13 @@
+//final code that to employs the trained model and effectively do the anomaly detection on the esp32
+
 #include <tesi_inferencing.h>
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>
 #include <math.h>
 
-#define TAU 0.1 //valore di errore limite 
-#define releMotopompa 5 //pin a cui è collegato il rele che accende/spegne la motopompa
+#define TAU 0.1 //error limit value
+#define releMotopompa 5 //motorpump switchoff relay pin
 
 Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
 /**
@@ -104,9 +106,9 @@ void loop()
             somma=somma+RMS[t];
         }
         RMS_med=somma/50;
-        if(RMS_med>=TAU){ //rilevo un anomalia->spengo la motopompa
+        if(RMS_med>=TAU){ //anomaly detected->motorpump is switched off
             digitalWrite(releMotopompa, 0);
-            Serial.println("ATTENZIONE: Anomalia rilevata->Motopompa spenta");
+            Serial.println("WARNING: Anomaly detected->motorpump is switched off");
             }
         }
     
@@ -114,7 +116,7 @@ void loop()
         i++;
 }//endloop
 
-//funzioni per il funzionamento del modello:
+
 void print_inference_result(ei_impulse_result_t result) {
     // Print how long it took to perform inference
     ei_printf("Timing: DSP %d ms, inference %d ms, anomaly %d ms\r\n",

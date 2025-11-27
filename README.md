@@ -630,6 +630,8 @@ Let’s have a brief look at the collected data.
 <img src="./images/media/image14.png"
 style="width:6.48992in;height:3.82847in"
 alt="Image containing screenshot, diagram AI-generated content may be incorrect." />
+
+
 Graph: Example of recorded vibrations-graph of file 7
 X-axis: sampling, Y-axis: acceleration m/s²
 
@@ -918,9 +920,9 @@ alt="Image containing diagram, screenshot, diagram AI-generated content may be i
 style="width:6.10269in;height:1.92593in"
 alt="Image Containing Screenshot, Text, Diagram, Diagram AI-generated content may be incorrect." />
 
-<img src="./images/media/image34.png"
+<img src="./images/media/image35.png"
 style="width:5.97847in;height:2.54583in"
-alt="Image containing text, screenshot, software, Multimedia software AI-generated content may be incorrect." /><img src="./images/media/image35.png"
+alt="Image containing text, screenshot, software, Multimedia software AI-generated content may be incorrect." /><img src="./images/media/image34.png"
 style="width:6.69306in;height:4.56111in"
 alt="Image containing diagram AI-generated content may be incorrect." />
 

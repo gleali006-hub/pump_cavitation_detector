@@ -621,9 +621,8 @@ Let’s have a brief look at the collected data.
 
 <img src="./images/media/image14.png"
 style="width:6.48992in;height:3.82847in"
-alt="Image containing screenshot, diagram AI-generated content may be incorrect." />Graph
-: Example of recorded vibrations-graph of file 7
-
+alt="Image containing screenshot, diagram AI-generated content may be incorrect." />
+Graph: Example of recorded vibrations-graph of file 7
 X-axis: sampling, Y-axis: acceleration m/s²
 
 We take file 7 as an example, because it includes a complete operating

@@ -20,7 +20,7 @@ TinyML system for firefighting pump anomaly detection using ESP32 &amp; ADXL345.
 
 - KNIME WORKFLOWS:
   
-  <https://hub.knime.com/gabriele_leali/spaces/Public/Cavitation%20detector~uu0xBp0oy2maPc_-/>
+<https://hub.knime.com/gabriele_leali/spaces/Public/Cavitation%20detector~uu0xBp0oy2maPc_-/>
 
 <h1>TECHNICAL DESCRIPTION
 

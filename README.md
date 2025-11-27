@@ -181,7 +181,7 @@ when considering a future large-scale use on all the pumps deployed in
 firefighting campaigns, especially if owned by volunteers groups with
 limited budget.
 
-**THE BOARD: ESP32C3**
+**-THE BOARD: ESP32C3**
 
 In detail, the SuperMini DevKit ESP32C3 board is a development module
 that integrates the System on a Chip (SoC) ESP32C3 produced by Espressif
@@ -253,7 +253,7 @@ alt="Image containing text, screenshot, circuit board AI-generated content may b
 <figcaption><p>Image : Pinout of the ESP32C3 DevKit</p></figcaption>
 </figure>
 
-**ACCELEROMETER**
+**-ACCELEROMETER**
 
 Choosing the accelerometer to pair with the microcontroller was easier.
 One of the most used models in Arduino projects is the ADXL345; my

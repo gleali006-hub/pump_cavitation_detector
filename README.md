@@ -296,7 +296,7 @@ which uses only two pins in addition to power and seemed the easiest to
 implement. It was also the richest in examples and explanations and I
 had already used it successfully several times in other projects.
 
-**COMPLETE ACQUISITION CIRCUIT**
+**-COMPLETE ACQUISITION CIRCUIT**
 
 The circuit for datalogging is therefore as follows:
 
@@ -335,7 +335,7 @@ from the computer to which it is connected to save the data.
 
 3.  **SOFTWARE**
 
-**ACQUISITION SYSTEM CODE**
+**-ACQUISITION SYSTEM CODE**
 
 First, I wrote the sketch for data acquisition, which was loaded on the
 ESP32 with Arduino IDE. You can find this sketch in the Github
@@ -355,7 +355,7 @@ accordance with Nyquist's theorem, it allows us to read data with a
 frequency up to 515/2=257.5 Hz, or 15450 RPM, a value much higher than
 the rotation speed of the 4-stroke motor that moves the pump impeller.
 
-**THE ALGORITHM**
+**-THE ALGORITHM**
 
 As said before, since no anomalous data is available, the idea is to
 "teach" the algorithm to predict normal operation, and then classify
@@ -364,7 +364,7 @@ anomaly. This is a typical anomaly detection problem, which is usually
 solved using a specific neural network structure: the autoencoder, which
 we’ll adopt as well.
 
-**THE AUTOENCODER**
+**-THE AUTOENCODER**
 
 An autoencoder is a type of artificial neural network used for
 unsupervised learning. Its main objective is to learn a compressed and
@@ -431,7 +431,7 @@ Once the datalogging system was ready, thanks to the “Gruppo Volontari
 del Garda” that kindly lent me their pumps, I proceeded with the
 measurement of the vibrations.
 
-**VIBRATION MEASUREMENT**
+**-VIBRATION MEASUREMENT**
 
 <img src="./images/media/image9.jpeg"
 style="width:3.26273in;height:2.99161in"
@@ -623,7 +623,7 @@ slightly different from each other.
 
 Let’s have a brief look at the collected data.
 
-**DATA PROCESSING**
+**-DATA PROCESSING**
 
 <img src="./images/media/image14.png"
 style="width:6.48992in;height:3.82847in"
@@ -674,7 +674,7 @@ X-axis: Sampling
 
 Y-axis: acceleration m/s²
 
-**ANALYSIS OF DATA COLLECTED**
+**-ANALYSIS OF COLLECTED DATA**
 
 We can now better analyze the graph: the recording begins with the motor
 of the pump off (almost zero vibrations), followed by 5 attempts of
@@ -708,7 +708,7 @@ I produced two versions of the model. Recorded data files number
 8 were kept as never-before-seen samples for further evaluation of
 network performance.
 
-**VIBRATORY SIGNAL PREDICTION-SMALL AUTOENCODER**
+**-VIBRATORY SIGNAL PREDICTION-SMALL AUTOENCODER**
 
 The first idea, since we have 3 data points for each sample (triplet
 X,Y,Z), was to keep the analysis in the "real" world and create an
@@ -777,7 +777,7 @@ current version is not yet suitable for practical use—but it’s not
 entirely discouraging either. Given these promising initial results, we
 can proceed to optimize the solution.
 
-**EXTENDED VIBRATORY-AUTOENCODER SIGNAL PREDICTION**
+**-EXTENDED VIBRATORY-AUTOENCODER SIGNAL PREDICTION**
 
 The first strategy adopted for optimization is to increase the size of
 the neural network. The Bottleneck layer must be smaller than our data;
@@ -848,7 +848,7 @@ reported in the following chapter.
 
 6.  **MODEL EVALUATION**
 
-**PERFORMANCE ACHIEVED**
+**-PERFORMANCE ACHIEVED**
 
 First, let's see some standard parameters to evaluate the correctness of
 a model, calculated with Knime's Numeric Scorer node:
@@ -1007,7 +1007,7 @@ The last step is to calculate the optimal error threshold to distinguish
 normal and anomalous situations, i.e. the maximum tolerance we have on
 the error of the model's predictions.
 
-**CALCULATION OF NORMAL-ABNORMAL LIMIT THRESHOLD**
+**-CALCULATION OF NORMAL-ABNORMAL LIMIT THRESHOLD**
 
 To determine the error threshold beyond which vibrations are considered
 anomalous, we apply the empirical rule of statistics (or three-sigma
@@ -1050,7 +1050,7 @@ We now have everything we need to complete the project.
 
 7.  **DEPLOYMENT: EDGEIMPULSE**
 
-**FROM THE MODEL TO THE APPLICATION**
+**-FROM THE MODEL TO THE APPLICATION**
 
 Once we have obtained and tested the final model which meets the desired
 characteristics, we export it from Knime with the appropriate node. The
@@ -1092,7 +1092,7 @@ that we can use as a basis for our programs. From them, and especially
 from the “static buffer” sketch, we move on to the realization of the
 final program to be executed on the ESP32.
 
-**THE CODE**
+**-THE CODE**
 
 To implement the model and effectively do the anomaly detection, the
 code will have to read the input data from the accelerometer, pass it to
@@ -1146,7 +1146,7 @@ Waiting to have the budget or the opportunity to employ a sacrificial
 pump in my test, I produced a script that simulates a cavitation event
 to test the model with it.
 
-**FINAL TEST: CAVITATION DETECTION ON ARTIFICIAL DATASET**
+**-FINAL TEST: CAVITATION DETECTION ON ARTIFICIAL DATASET**
 
 The fictitious dataset was produced by modifying file 7, already used
 previously for evaluation, adding a fictitious cavitation episode to it.

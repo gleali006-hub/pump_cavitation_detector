@@ -58,9 +58,9 @@ damage.
 > 5-THE MODELS
 >
 > *Vibratory Signal Prediction*
-
-*Small autoencoder*
-
+>
+>*Small autoencoder*
+>
 > *Extended autoencoder*
 >
 > 6-MODEL EVALUATION

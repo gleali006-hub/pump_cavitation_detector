@@ -1,4 +1,4 @@
-<div align="center"># cavitation_detection_pump </div>
+<div align="center"><h1><b></b>FIREFIGHTING’S PUMPS CAVITATION DETECTOR</div>
 TinyML system for firefighting pump anomaly detection using ESP32 &amp; ADXL345. It employs a custom autoencoder trained on self-collected vibration data via Edge Impulse to monitor vibrations in real-time, detect cavitation, and trigger automatic shutdown to prevent equipment damage.
 
 <figure>
@@ -11,7 +11,7 @@ TinyML system for firefighting pump anomaly detection using ESP32 &amp; ADXL345.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<div align="center"><h1><b></b>FIREFIGHTING’S PUMPS CAVITATION DETECTOR</div>
+
 
 **USEFUL LINKS:**
 

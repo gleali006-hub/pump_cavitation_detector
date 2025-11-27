@@ -342,7 +342,7 @@ from the computer to which it is connected to save the data.
 
 First, I wrote the sketch for data acquisition, which was loaded on the
 ESP32 with Arduino IDE. You can find this sketch in the Github
-repository of the project in the “Data” folder. The I2C protocol is used
+repository of the project in the “data acquisition” folder, along with all the other materials used in this phase. The I2C protocol is used
 for communication with the accelerometer; the instructions for this
 protocol are contained in the "Wire.h" library. On this board, the
 protocol uses pins 8 (SDA) and 9 (SCL).

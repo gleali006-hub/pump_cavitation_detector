@@ -30,6 +30,7 @@ TinyML system for firefighting pump anomaly detection using ESP32 &amp; ADXL345.
 
 <div align="center"><h1>TECHNICAL DESCRIPTION </div>
 
+*(Note: a .pdf version of this document is provided in the repository for a better layout and readability)*
 **INDEX:**
 
 > 1-INTRODUCTION
